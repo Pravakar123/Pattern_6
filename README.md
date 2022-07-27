@@ -1,2 +1,24 @@
-# Pattern_6
-Take Integer N as input and print the following pattern.  image  Input Format  Single Line Input  Integer Value Constraints  1&lt;=N&lt;=100  Output Format  N Line of Pattern as shown in problem statement.  Note: No space in between stars.  Sample Input 0  5 Sample Output 0  *****  ****   ***    **     *
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         Scanner sc = new Scanner(System.in); 
+        int rows = sc.nextInt();
+        for (int i= rows; i>= 1; i--)
+        {
+        for (int j=rows; j>i;j--)
+        {
+        System.out.print(" ");
+        }
+        for (int k=1;k<=i;k++)
+        {
+        System.out.print("*");
+        }
+        System.out.println("");
+        }
+            sc.close();
+    }
+}
